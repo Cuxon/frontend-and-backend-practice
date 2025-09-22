@@ -1,49 +1,73 @@
 <!DOCTYPE html>
-<html lamg = "ru">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Семестровая работа</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="pages/news.html">Новости</a></li>
-                <li><a href="pages/practice.html">Практики</a></li> 
-                <li><a href="pages/goods.html">Товары</a></li>
-                <li><a href="pages/contacts.html">Контакты</a></li>
-            </ul>
+        <div class="page-container">
+            <header class="header">
+                <h1>Цуканов Максим Дмитриевич</h1>
+            </header>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="pages/practice.html" class="nav-link">Практики</a></li> 
+                    <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
+                    <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <main class="content">
+                <section class="profile-header">
+                    <h2 class="profile-title">Информация об авторе</h2>
+                    <img src="images/IMG_8547.JPG" alt="Фото автора" class="profile-photo">
+                    <h3 class="profile-name">Цуканов Максим Дмитриевич</h3>
+                    <p class="profile-group">ЭФБО-18-24</p>
+                </section>
+                
+                <div class="about-me">
+                    <p>Обо мне: Я родился в Москве в 46-м на краю мира. И уже с самого начала я понял что буду. В четыре месяца активно ругался.
+                    Потом садик, драки, амфетамин. Так я становился сильней. Воровал деньги, танки и меф.</p>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-tag">Навык 1</div>
+                    <div class="skill-tag">Навык 2</div>
+                    <div class="skill-tag">Навык 3</div>
+                    <div> Люблю арбузы</div>
+                    <div class="skill-tag">Навык 4</div>
+                    <div> Патриот</div>
+                </div>
+                
+                <section class="experience-section">
+                    <h2 class="section-title">Мой опыт работы</h2>
+                    
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">НЕ Работал и праздновал.</p>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Снова не работал. Только воровал деньги из гос бюджета.</p>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Стал топ 1 в списке Forbs.</p>
+                    </div>
+                </section>
+            </main>
+            
+            <footer class="footer">
+                <p>Тут будет что-то важное. Честно</p>
+                <p>По вопросам мефа не звонить, а по танкам звоните, продам</p>
+            </footer>
         </div>
-        <div id="content">
-            <p>Информация об авторе</p>
-            <img src="images/IMG_8547.JPG" alt="Фото автора" width="400" height="250">
-            <p>Цуканов Максим Дмитриевич</p>
-            <p>ЭФБО-18-24</p>
-            <p>Обо мне: Я родился в Москве в 46-м на краю мира. И уже с самого начала я понял что буду.  В четыре месяца активно ругался матом.
-Потом садик, драки, амфетамин. Так я становился сильней. Воровал деньги, танки и меф.</p>
-            <div>Навык 1</div>
-            <div>Навык 2</div>
-            <div>Навык 3</div>
-            <div>Навык 4</div>
-            <div>
-                Мой опыт работы:
-                <div>
-                    Опыт 1<br>
-                    НЕ Работал и праздновал.
-                </div>
-                <div>
-                    Опыт 2<br>
-                    Снова не работал. Только воровал.
-                </div>
-                <div>
-                    Опыт 3<br>
-                    Стал топ 1 в списке Forbs.
-                </div>
-            </div>
-        </div>
-        <div id="footer">Тут будет что-то важное. Честно</div> 
-        <div> По вопросам мефа не звонить, а по танкам звоните, продам <div>
     </body>
 </html>
