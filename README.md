@@ -1,2 +1,1 @@
-- [Публичная страница на GitHub Pages](https://github.com/Cuxon/frontend-and-backend-practice/settings/pages)
-- 
+- [Публичная страница на GitHub Pages](https://cuxon.github.io/frontend-and-backend-practice/pages/contacts.html)
