@@ -1,73 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Цуканов Максим Дмитриевич</h1>
-            </header>
-            
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
-                    <li class="nav-item"><a href="pages/practice.html" class="nav-link">Практики</a></li> 
-                    <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
-                    <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <main class="content">
-                <section class="profile-header">
-                    <h2 class="profile-title">Информация об авторе</h2>
-                    <img src="images/IMG_8547.JPG" alt="Фото автора" class="profile-photo">
-                    <h3 class="profile-name">Цуканов Максим Дмитриевич</h3>
-                    <p class="profile-group">ЭФБО-18-24</p>
-                </section>
-                
-                <div class="about-me">
-                    <p>Обо мне: Я родился в Москве в 46-м на краю мира. И уже с самого начала я понял что буду. В четыре месяца активно ругался.
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Patriot.com</h1>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="pages/news.html" class="nav-link">Новости</a></li>
+                <li class="nav-item"><a href="pages/practice.html" class="nav-link">Практики</a></li>
+                <li class="nav-item"><a href="pages/goods.html" class="nav-link">Товары</a></li>
+                <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="profile-header">
+                <h2 class="profile-title">Информация об авторе</h2>
+                <img src="images/IMG_8547.JPG" alt="Фото автора" class="profile-photo">
+                <h3 class="profile-name">Цуканов Максим Дмитриевич</h3>
+                <p class="profile-group">ЭФБО-18-24</p>
+            </section>
+
+            <div class="about-me">
+                <p>Обо мне: Я родился в Москве в 46-м на краю мира. И уже с самого начала я понял что буду. В четыре
+                    месяца активно ругался.
                     Потом садик, драки, амфетамин. Так я становился сильней. Воровал деньги, танки и меф.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-tag">Навык 1</div>
+                <div> добрый </div>
+                <div class="skill-tag">Навык 2</div>
+                <div> отзывчивый </div>
+                <div class="skill-tag">Навык 3</div>
+                <div> Люблю арбузы</div>
+                <div class="skill-tag">Навык 4</div>
+                <div> Патриот</div>
+            </div>
+
+            <section class="experience-section">
+                <h2 class="section-title">Мой опыт работы</h2>
+
+                <div class="experience-card">
+                    <h3 class="experience-title">Опыт 1</h3>
+                    <p class="experience-desc">НЕ Работал и праздновал.</p>
                 </div>
-                
-                <div class="skills-container">
-                    <div class="skill-tag">Навык 1</div>
-                    <div class="skill-tag">Навык 2</div>
-                    <div class="skill-tag">Навык 3</div>
-                    <div> Люблю арбузы</div>
-                    <div class="skill-tag">Навык 4</div>
-                    <div> Патриот</div>
+
+                <div class="experience-card">
+                    <h3 class="experience-title">Опыт 2</h3>
+                    <p class="experience-desc">Снова не работал. Только воровал деньги из гос бюджета.</p>
                 </div>
-                
-                <section class="experience-section">
-                    <h2 class="section-title">Мой опыт работы</h2>
-                    
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 1</h3>
-                        <p class="experience-desc">НЕ Работал и праздновал.</p>
+
+                <div class="experience-card">
+                    <h3 class="experience-title">Опыт 3</h3>
+                    <p class="experience-desc">Стал топ 1 в списке Forbs.</p>
+                </div>
+                <button class="contact-button" onclick="contactModal.showModal()">Не связывайтесь с нами</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Тут будет что-то важное. Честно</p>
+            <p>По вопросам мефа не звонить, а по танкам звоните, продам</p>
+        </footer>
+        <dialog id="contactModal">
+            <div class="modal-header">
+                <h2>Форма обратной связи</h2>
+            </div>
+
+            <div class="modal-content">
+                <form id="feedbackForm" method="dialog">
+                    <div class="form-group">
+                        <label for="name">Имя <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
                     </div>
-                    
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 2</h3>
-                        <p class="experience-desc">Снова не работал. Только воровал деньги из гос бюджета.</p>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
                     </div>
-                    
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 3</h3>
-                        <p class="experience-desc">Стал топ 1 в списке Forbs.</p>
+
+                    <div class="form-group">
+                        <label for="email">Электронная почта <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
                     </div>
-                </section>
-            </main>
-            
-            <footer class="footer">
-                <p>Тут будет что-то важное. Честно</p>
-                <p>По вопросам мефа не звонить, а по танкам звоните, продам</p>
-            </footer>
-        </div>
-    </body>
+
+                    <div class="form-group">
+                        <label for="category">Категория обращения <span class="required">*</span></label>
+                        <select id="category" name="category" required>
+                            <option value="">Выберите категорию</option>
+                            <option value="technical">Техническая поддержка</option>
+                            <option value="commercial">Коммерческое предложение</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="complaint">Не жалуйся</option>
+                            <option value="suggestion">Предложение</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Текст обращения <span class="required">*</span></label>
+                        <textarea id="message" name="message" required
+                            placeholder="Опишите вашу проблему или вопрос..."></textarea>
+                    </div>
+
+                    <div class="modal-actions">
+                        <!-- Кнопка отмены с автоматическим закрытием через form method="dialog" -->
+                        <button type="submit" class="btn btn-secondary">Отмена</button>
+                        <!-- Кнопка отправки с обработкой через JavaScript -->
+                        <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+        <script>
+            // Функция для отправки формы
+            function submitForm() {
+                const form = document.getElementById('feedbackForm');
+                const formData = new FormData(form);
+
+                // Простая валидация
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                // Сбор данных
+                const data = {
+                    name: formData.get('name'),
+                    phone: formData.get('phone'),
+                    email: formData.get('email'),
+                    category: formData.get('category'),
+                    message: formData.get('message')
+                };
+
+                // В реальном приложении здесь был бы AJAX-запрос
+                console.log('Данные формы:', data);
+
+                //Успешная отправка
+                alert('Спасибо! Ваше обращение отправлено. Мы свяжемся с вами в ближайшее время.');
+
+                contactModal.close();
+
+                form.reset();
+            }
+
+            // Закрытие модального окна по клику на фон
+            document.getElementById('contactModal').addEventListener('click', function (event) {
+                if (event.target === this) {
+                    this.close();
+                }
+            });
+
+            // Обработка отправки через Enter
+            document.getElementById('feedbackForm').addEventListener('keypress', function (event) {
+                if (event.key === 'Enter' && event.target.type !== 'textarea') {
+                    event.preventDefault();
+                }
+            })
+            //Пр имени (только буквы и пробелы)
+            function validateName(name) {
+                return /^[А-Яа-яЁёA-Za-z\s]+$/.test(name.trim());
+            }
+
+            //Пр телефона (+7 (XXX) XXX-XX-XX)
+            function validatePhone(phone) {
+                return /^\+7\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2}$/.test(phone.trim());
+            }
+
+            //Пр email
+            function validateEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+            }
+
+            function submitForm() {
+                const form = document.getElementById('feedbackForm');
+                const formData = new FormData(form);
+
+                const name = formData.get('name');
+                const phone = formData.get('phone');
+                const email = formData.get('email');
+                const category = formData.get('category');
+                const message = formData.get('message');
+
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                if (!validateName(name)) {
+                    alert('Имя должно содержать только буквы и пробелы.');
+                    return;
+                }
+
+                if (!validatePhone(phone)) {
+                    alert('Телефон должен быть в формате: +7 (XXX) XXX-XX-XX');
+                    return;
+                }
+
+                if (!validateEmail(email)) {
+                    alert('Введите корректный email.');
+                    return;
+                }
+
+                const data = { name, phone, email, category, message };
+
+                console.log('Данные формы:', data);
+
+                alert('Спасибо! Ваше обращение отправлено. Мы свяжемся с вами в ближайшее время.');
+
+                contactModal.close();
+
+                form.reset();
+            }
+
+            // Ограничение (только буквы и пробелы)
+            document.getElementById('name').addEventListener('input', function () {
+                this.value = this.value.replace(/[^А-Яа-яЁёA-Za-z\s]/g, '');
+            });
+
+            // Маска для телефона
+            document.getElementById('phone').addEventListener('input', function () {
+                let x = this.value.replace(/\D/g, '').match(/(\d{1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                this.value = !x[2]
+                    ? '+' + x[1]
+                    : '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+            });
+
+            // Закрытие по клику вне 
+            document.getElementById('contactModal').addEventListener('click', function (event) {
+                if (event.target === this) {
+                    this.close();
+                }
+            });
+
+
+        </script>
+    </div>
+</body>
+
 </html>
